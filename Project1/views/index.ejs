@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyApp</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+     <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body,html{
+            height: 100%;
+            width: 100%;
+            background-color: black;
+        }
+     </style>
+</head>
+<body>
+    <div class="main w-full min-h-screen">
+        <div class="ctask">
+            <form class="text-white p-10" action="/create" method="post">
+                <input name="title" class="title outline-none w-full rounded-md block px-5 py-2 bg-zinc-800" type="text" placeholder="Enter Title">
+                <textarea name="details" class="mt-2 outline-none w-full rounded-md details block px-5 py-2 bg-zinc-800 resize-none" name="" id="" placeholder="Enter Details" aria-setsize="none"></textarea>
+                <input class="bg-green-600 px-8 rounded-md hover:cursor-pointer py-2 mt-2 submit" type="submit" value="Create">
+            </form>
+        </div>
+        <div class="tasks flex gap-4 flex-wrap p-10">
+            <% if(files.length>0){ %>
+                <% files.forEach((val)=>{ %>
+                <div class="task min-w-72 rounded-md px-3 py-4 mr-2 bg-zinc-800">
+                <h1 class="text-white tracking-tighter text-3xl"><%= val %></h1>
+                <a class="text-green-500 inline-block mt-3" href="">read more</a>
+                </div>
+                <% }) %>
+                <% } else { %>
+                    <div class="text-zinc-600">No tasks Yet</div>
+                    <% } %>
+            <!-- <div class="task w-72 rounded-md px-3 py-4 mr-2 bg-zinc-800">
+                <h1 class="text-white tracking-tighter text-3xl">Task-Title</h1>
+                <a class="text-green-500 inline-block mt-3" href="">read more</a>
+            </div>
+            <div class="task w-72 rounded-md px-3 py-4 mr-2 bg-zinc-800">
+                <h1 class="text-white tracking-tighter text-3xl">Task-Title</h1>
+                <a class="text-green-500 inline-block mt-3" href="">read more</a>
+            </div>
+            <div class="task w-72 rounded-md px-3 py-4 mr-2 bg-zinc-800">
+                <h1 class="text-white tracking-tighter text-3xl">Task-Title</h1>
+                <a class="text-green-500 inline-block mt-3" href="">read more</a>
+            </div> -->
+            
+        </div>
+    </div>
+</body>
+</html>
