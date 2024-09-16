@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gemini</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="w-full h-screen bg-black flex">
+
+    <!-- SIDEBAR -->
+    <div class="left w-[20%] border-r border-zinc-600 rounded-md h-screen flex flex-col justify-between items-center">
+        <div class="flex m-2 w-[90%] flex-col justify-center items-start">
+            <button class="text-xl text-white px-3 py-2 transition-all duration-700 hover:bg-zinc-500 rounded-full">☰</button>
+        </div>
+        <div class="flex m-2 w-[90%] flex-col justify-center items-start">
+            <button class="text-xl text-white px-6 py-2 transition-all duration-700 hover:bg-zinc-500 rounded-full">➕ new chat</button>
+        </div>
+        <div class="flex m-2 w-[90%] flex-col justify-center items-start">
+            <span class="text-white">↻ Recent</span>
+            <span class="text-white w-full p-1 text-start mb-2">💬 What is react...</span>
+            <span class="text-white w-full p-1 text-start mb-2">💬 What is react...</span>
+            <span class="text-white w-full p-1 text-start mb-2">💬 What is react...</span>
+            <button class="text-white px-4 py-2 text-start">...More</button>
+        </div>
+        <div class="flex m-2 w-[90%] flex-col justify-center items-start">
+            <button class="text-white w-full p-1 text-start mb-2">💎 Gem Manager </button>
+            <button class="text-white w-full p-1 text-start mb-2">❓ Help</button>
+            <button class="text-white w-full p-1 text-start mb-2">⏲ Activity</button>
+            <button class="text-white w-full p-1 text-start mb-2">⚙️ Settings</button>
+        </div>
+    </div>
+
+
+    <!-- Right Components -->
+    <div class="right w-[80%] flex flex-col justify-between items-center">
+
+
+        <!-- Navbar -->
+        <div class="nav flex justify-between items-center w-full p-5 border-b border-zinc-500">
+
+            <!-- Logo -->
+            <div class="logo">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Google_Gemini_logo.svg/2560px-Google_Gemini_logo.svg.png" alt="logo" class="w-20 object-contain">
+            </div>
+
+            <!-- Profile -->
+            <div class="profile">
+                <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="profile" class="w-10 h-10">
+            </div>
+        </div>
+
+
+        <!-- Chat -->
+        <div class="chat w-[80%] flex flex-col justify-center items-start">
+            <h1 class="text-purple-600 text-5xl">Hello, Priyanshu</h1>
+            <h1 class="text-zinc-700 text-4xl">How can I Help you today?</h1>
+        </div>
+
+
+        <!-- Prompts -->
+        <div class=" w-[80%] flex justify-start items-center mt-2"></div>
+            <span class="flex mr-2 overflow-wrap w-[20%] h-[30vh] text-start p-5 text-3xl bg-zinc-800 rounded-xl text-white">
+                What are tips to improve public speaking skills?
+            </span>
+            <span class="flex mr-2 overflow-wrap w-[20%] h-[30vh] text-start p-5 text-3xl bg-zinc-800 rounded-xl  text-white">
+                What are tips to improve public speaking skills?
+            </span>
+            <span class="flex mr-2 overflow-wrap w-[20%] h-[30vh] text-start p-5 text-3xl bg-zinc-800 rounded-xl  text-white">
+                What are tips to improve public speaking skills?
+            </span>
+            <span class="flex mr-2 overflow-wrap w-[20%] h-[30vh] text-start p-5 text-3xl bg-zinc-800 rounded-xl text-white">
+                What are tips to improve public speaking skills?
+            </span>
+        </div>
+
+        
+
+
+    </div>
+    
+</body>
+</html>
